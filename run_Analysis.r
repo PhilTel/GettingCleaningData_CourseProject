@@ -12,7 +12,8 @@
 ## Q2. Merged data with columns extracted for all 'mean' and 'std variables: X_data_filtered
 ## Q3. Merged data with activity names added: X_data_tidy
 ## Q4. Existing names considered adequate: X_data_tidy
-## Q5. Data set of 2 independent tables: avg_by_subject & avg_by_activity
+## Q5. Data set of 2 independent tables: avg_by_subject & avg_by_activity. Also creates output
+##     text file Q5Dataset.txt which includes avg_by_subject and avg_by_activity
 
 ## I have assumd the features.txt list provides variables names to the X_test and X_train
 ## datasets such that top to bottom (features) matches left to right (X_test/train)
@@ -78,6 +79,8 @@ run_Analysis <- function(){
                                     by=list(X_data_tidy$activity), mean)
         avg_by_subject <- aggregate(X_data_tidy[,-(1:2)],
                                     by=list(X_data_tidy$subject), mean)
+        write.table(avg_by_subject, file = "Q5Dataset.txt", row.names = FALSE)
+        write.table(avg_by_activity, file = "Q5Dataset.txt", row.names = FALSE, append = TRUE)
 
 }
         
