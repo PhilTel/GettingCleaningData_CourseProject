@@ -41,8 +41,8 @@ subject variables. The variables of X_data_tidy are:
 [64] "fBodyGyro-std-Z"           "fBodyAccMag-std"           "fBodyBodyAccJerkMag-std"  
 [67] "fBodyBodyGyroMag-std"      "fBodyBodyGyroJerkMag-std"
 
-avg_by_subject & avg_by_activity
+summary_table
 
-These tables consist of data summarised from X_data_tidy.
-- avg_by_subject provides the mean of each variable by subject
-- avg_by_activity provides the mean of each variable by subject
+This tables consist of data summarised from X_data_tidy. The table is grouped by Activity then by Subject
+and the average of each of data variables is allocated against that grouping. The variables of this table
+are similar to X_data_tidy, except they are appended with '_average' to denote their content.
