@@ -30,7 +30,7 @@ Q1. Initial merged dataset: X_data
 Q2. Merged data with columns extracted for all 'mean' and 'std variables: X_data_filtered
 Q3. Merged data with activity names added: X_data_tidy
 Q4. Existing names considered adequate: X_data_tidy
-Q5. Data set of 2 independent tables: avg_by_subject & avg_by_activity
+Q5. Data set of a summary table containing the average of variables grouped by activity and subject: summary_table
 
 In answering Q3, I assumed that the question required extraction of all variables with
 'mean' or 'std' in their names.
@@ -39,4 +39,3 @@ Files associated with this project are:
 - 'README.txt'
 - 'codebook.txt': contains information on the analyses undertaken
 - 'run_Analysis.r': contains the r code for the required analysis
-# GettingCleaningData_CourseProject
